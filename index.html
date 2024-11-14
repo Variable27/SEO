@@ -4,26 +4,38 @@
     <!-- Enhanced SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="John Paul Bantillo - NISU CICS Student, Technology Innovator, and Computer Science Expert. Explore my portfolio showcasing projects, skills, and achievements at Negros Island State University.">
-    <meta name="keywords" content="John Paul Bantillo, NISU, CICS, Computer Science, Portfolio, Technology, Innovation, Negros Island State University, College of Information and Computing Sciences">
+    <meta name="description" content="Official portfolio of John Paul Bantillo - NISU CICS Student, Technology Innovator, and Computer Science Expert. Explore projects, skills, and achievements at Negros Island State University. Expert in web development, programming, and computer science.">
+    <meta name="keywords" content="John Paul Bantillo, NISU, CICS, Computer Science, Portfolio, Technology, Innovation, Negros Island State University, College of Information and Computing Sciences, Web Developer, Programmer">
     <meta name="author" content="John Paul Bantillo">
-    <meta name="google-site-verification" content="dHM8ZRm6tVO6F2cNye2EcgnzyGvZskTOJikKNtHmpm4" />
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="John Paul Bantillo - NISU CICS Technology Portfolio">
-    <meta property="og:description" content="Explore the portfolio of John Paul Bantillo, a NISU CICS student passionate about technology and innovation.">
-    <meta property="og:image" content="https://www.johnpaulbantillo.site/img/profile.jpg">
-    <meta property="og:url" content="https://www.johnpaulbantillo.site">
-    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
     
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="John Paul Bantillo - NISU CICS Portfolio">
-    <meta name="twitter:description" content="John Paul Bantillo's technology portfolio - NISU CICS student and innovator">
-    <meta name="twitter:image" content="https://www.johnpaulbantillo.site/img/profile.jpg">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.johnpaulbantillo.site/">
+    <meta property="og:title" content="John Paul Bantillo - NISU CICS Technology Portfolio">
+    <meta property="og:description" content="Discover John Paul Bantillo's technology portfolio - NISU CICS student, innovator, and future tech leader. Featuring projects, skills, and achievements in computer science.">
+    <meta property="og:image" content="https://www.johnpaulbantillo.site/img/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.johnpaulbantillo.site/">
+    <meta property="twitter:title" content="John Paul Bantillo - NISU CICS Portfolio">
+    <meta property="twitter:description" content="John Paul Bantillo's technology portfolio - NISU CICS student and innovator. Explore my journey in computer science and technology.">
+    <meta property="twitter:image" content="https://www.johnpaulbantillo.site/img/profile.jpg">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.johnpaulbantillo.site">
-    <meta name="google-site-verification" content="dHM8ZRm6tVO6F2cNye2EcgnzyGvZskTOJikKNtHmpm4" />
+    <link rel="canonical" href="https://www.johnpaulbantillo.site/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <title>John Paul Bantillo - NISU CICS Student Portfolio | Technology Innovator</title>
+
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
     {
@@ -32,32 +44,40 @@
       "name": "John Paul Bantillo",
       "url": "https://www.johnpaulbantillo.site",
       "image": "https://www.johnpaulbantillo.site/img/profile.jpg",
-      "description": "NISU CICS Student and Technology Innovator",
+      "description": "NISU CICS Student and Technology Innovator specializing in computer science and web development",
       "sameAs": [
         "https://github.com/johnpaulbantillo",
         "https://linkedin.com/in/johnpaulbantillo"
       ],
-      "education": {
+      "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "Negros Island State University",
-        "department": "College of Information and Computing Sciences"
-      }
+        "department": "College of Information and Computing Sciences",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Negros Island",
+          "addressRegion": "Philippines"
+        }
+      },
+      "knowsAbout": [
+        "Web Development",
+        "Computer Science",
+        "Programming",
+        "Software Engineering",
+        "NISU CICS"
+      ]
     }
     </script>
-
-    <title>John Paul Bantillo - NISU CICS Student Portfolio | Technology Innovator</title>
-
-    <!-- Previous CSS remains the same -->
 </head>
 <body>
     <header itemscope itemtype="https://schema.org/WPHeader">
         <nav class="container">
             <div class="logo">JPB</div>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" title="About John Paul Bantillo">About</a>
+                <a href="#education" title="Education at NISU CICS">Education</a>
+                <a href="#skills" title="Technical Skills">Skills</a>
+                <a href="#contact" title="Contact Information">Contact</a>
             </div>
         </nav>
     </header>
@@ -66,31 +86,97 @@
         <section class="hero" itemscope itemtype="https://schema.org/Person">
             <div class="hero-content">
                 <div class="hero-image glow">
-                    <img itemprop="image" src="img/profile.jpg" alt="John Paul Bantillo - NISU CICS Student" />
+                    <img itemprop="image" src="img/profile.jpg" alt="John Paul Bantillo - NISU CICS Student and Technology Innovator" width="200" height="200" loading="eager">
                 </div>
                 <h1 itemprop="name">John Paul Bantillo</h1>
-                <p class="subtitle" itemprop="description">NISU CICS Student | Technology Innovator | Computer Science Excellence</p>
+                <p class="subtitle" itemprop="description">NISU CICS Student | Technology Innovator | Computer Science Expert</p>
             </div>
         </section>
 
-        <!-- About Section with keywords -->
         <section id="about" itemscope itemtype="https://schema.org/AboutPage">
             <div class="container">
                 <h2 class="section-title">About John Paul Bantillo</h2>
                 <div class="grid">
                     <div class="card glow">
                         <h3>Technology Expert at NISU</h3>
-                        <p itemprop="description">As a dedicated student at Negros Island State University (NISU) College of Information and Computing Sciences (CICS), I combine theoretical knowledge with practical applications in computer science and technology innovation.</p>
+                        <p itemprop="description">As a dedicated student at Negros Island State University (NISU) College of Information and Computing Sciences (CICS), I specialize in advanced computer science concepts and innovative technology solutions. My expertise spans web development, programming, and software engineering.</p>
                     </div>
                     <div class="card glow">
                         <h3>CICS Innovation Leader</h3>
-                        <p itemprop="description">Focused on advancing technology solutions and contributing to the NISU CICS community through innovative projects and research initiatives.</p>
+                        <p itemprop="description">Leading technological advancement at NISU CICS through innovative projects, research initiatives, and collaborative development. Focused on creating impactful solutions that bridge academic excellence with practical applications.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Previous sections remain the same -->
+        <section id="education" class="bg-gradient">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="card glow">
+                    <h3>Negros Island State University</h3>
+                    <p>College of Information and Computing Sciences</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>Specializing in Web Development and Software Engineering</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="grid">
+                    <div class="card glow">
+                        <h3>Programming & Development</h3>
+                        <div class="skill">
+                            <p>Full Stack Development</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Software Engineering</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card glow">
+                        <h3>Technologies & Tools</h3>
+                        <div class="skill">
+                            <p>Web Technologies</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Database Management</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Connect With John Paul Bantillo</h2>
+                <div class="card glow">
+                    <div class="contact-links">
+                        <a href="https://github.com/johnpaulbantillo" class="contact-link" title="GitHub Profile" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/johnpaulbantillo" class="contact-link" title="LinkedIn Profile" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:contact@johnpaulbantillo.site" class="contact-link" title="Email Contact">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
