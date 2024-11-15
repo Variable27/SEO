@@ -278,6 +278,25 @@ section {
     border: 1px solid rgba(224, 224, 255, 0.1);
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    gap: 10px; /* Space between each contact link */
+    margin-top: 20px; /* Adjust as needed for spacing from other elements */
+}
+
+.contact-links a {
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Adjust size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-links a:hover {
+    color: #0073e6; /* Change color on hover */
+}
+
+
 .card::before {
     content: '';
     position: absolute;
@@ -318,6 +337,16 @@ section {
     }
 }
 
+.contact-link i {
+    font-size: 1.5em; /* Adjust size */
+    color: #333; /* Icon color */
+    transition: color 0.3s;
+}
+
+.contact-link:hover i {
+    color: #0073e6; /* Icon color on hover */
+}
+
 /* Added Print Styles */
 @media print {
     .hero::before,
@@ -331,6 +360,7 @@ section {
         color: black;
     }
     
+
     .container {
         max-width: 100%;
     }
