@@ -86,79 +86,81 @@
         </nav>
     </header>
 
-    <main role="main" itemscope itemtype="https://schema.org/ProfilePage">
-        <section class="section hero" itemscope itemtype="https://schema.org/Person">
-            <div class="hero-content">
-                <div class="hero-image glow">
-                    <img src="img/profile.jpg" 
-                         alt="John Paul Bantillo - Web and Application Developer"
-                         itemprop="image" 
-                         width="200" 
-                         height="200"
-                         loading="eager">
-                </div>
-                <h1 itemprop="name">John Paul Bantillo</h1>
-                <p>NISU | CICS | Web and Application Developer | Technology Innovator</p>
+<main role="main" itemscope itemtype="https://schema.org/ProfilePage">
+    <section class="section hero" itemscope itemtype="https://schema.org/Person" itemprop="mainEntity">
+        <div class="hero-content">
+            <div class="hero-image glow">
+                <img src="img/profile.jpg" 
+                     alt="John Paul Bantillo - Web and Application Developer"
+                     itemprop="image" 
+                     width="200" 
+                     height="200"
+                     loading="eager">
             </div>
-        </section>
+            <h1 itemprop="name">John Paul Bantillo</h1>
+            <p itemprop="jobTitle">Web and Application Developer</p>
+            <p>NISU | CICS | Technology Innovator</p>
+        </div>
+    </section>
 
-        <section id="about" class="section" itemscope itemtype="https://schema.org/AboutPage">
-            <div class="container">
-                <h2>About John Paul Bantillo</h2>
-                <div class="grid">
-                    <div class="card glow">
-                        <h3>Web and Application Developer</h3>
-                        <p>I am a passionate developer focused on crafting seamless user experiences and innovative web and application solutions. As a student at <a href="https://www.nisu.edu.ph/">Northern Iloilo State University (NISU)</a>, I specialize in creating cutting-edge technologies that solve real-world challenges.</p>
-                    </div>
+    <section id="about" class="section" itemscope itemtype="https://schema.org/AboutPage">
+        <div class="container">
+            <h2 itemprop="name">About John Paul Bantillo</h2>
+            <div class="grid">
+                <div class="card glow" itemprop="description">
+                    <h3>Web and Application Developer</h3>
+                    <p>I am a passionate developer focused on crafting seamless user experiences and innovative web and application solutions. As a student at <a href="https://www.nisu.edu.ph/">Northern Iloilo State University (NISU)</a>, I specialize in creating cutting-edge technologies that solve real-world challenges.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="section bg-gradient">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="card glow">
-                    <h3><a href="https://www.nisu.edu.ph/">Northern Iloilo State University</a></h3>
-                    <p>College of Information and Computing Studies (CICS)</p>
-                    <p>Bachelor of Science in Information Technology (BSIT)</p>
-                    <p>Specializing in Web and Application Development</p>
-                </div>
+    <section id="education" class="section bg-gradient" itemscope itemtype="https://schema.org/EducationEvent">
+        <div class="container">
+            <h2 itemprop="name">Education</h2>
+            <div class="card glow">
+                <h3><a href="https://www.nisu.edu.ph/" itemprop="provider">Northern Iloilo State University</a></h3>
+                <p itemprop="educationalProgram">College of Information and Computing Studies (CICS)</p>
+                <p>Bachelor of Science in Information Technology (BSIT)</p>
+                <p>Specializing in Web and Application Development</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Technical Expertise</h2>
-                <div class="grid">
-                    <div class="card glow">
-                        <h3>Programming & Development</h3>
-                        <p>Full Stack Development | Software Engineering</p>
-                    </div>
-                    <div class="card glow">
-                        <h3>Technologies & Tools</h3>
-                        <p>Web Technologies | Database Management</p>
-                    </div>
+    <section id="skills" class="section" itemscope itemtype="https://schema.org/DefinedTermSet">
+        <div class="container">
+            <h2 itemprop="name">Technical Expertise</h2>
+            <div class="grid">
+                <div class="card glow" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <h3 itemprop="name">Programming & Development</h3>
+                    <p itemprop="description">Full Stack Development | Software Engineering</p>
+                </div>
+                <div class="card glow" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <h3 itemprop="name">Technologies & Tools</h3>
+                    <p itemprop="description">Web Technologies | Database Management</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-links">
-                    <a href="https://github.com/variable27" title="GitHub Profile">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/john-paul-bantillo-59542727b/" title="LinkedIn Profile">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:jpbantillo27@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+    <section id="contact" class="section" itemscope itemtype="https://schema.org/ContactPoint">
+        <div class="container">
+            <h2 itemprop="contactType">Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://github.com/variable27" title="GitHub Profile" itemprop="url">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/john-paul-bantillo-59542727b/" title="LinkedIn Profile" itemprop="url">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:jpbantillo27@gmail.com" title="Email" itemprop="email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
+
 
     <footer>
         <div class="container">
