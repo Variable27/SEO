@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Primary Meta Tags -->
-    <title>John Paul Bantillo - Web and Application Developer</title>
-    <meta name="title" content="John Paul Bantillo - Web and Application Developer">
-    <meta name="description" content="Portfolio of John Paul Bantillo, a Web and Application Developer specializing in cutting-edge technology solutions.">
+    <!-- Enhanced Primary Meta Tags -->
+    <title>John Paul Bantillo | NISU CICS Student & Web Developer</title>
+    <meta name="title" content="John Paul Bantillo - NISU CICS Student & Web Developer">
+    <meta name="description" content="Portfolio of John Paul Bantillo, a Web Developer and BSIT student at Northern Iloilo State University (NISU) College of Information and Computing Studies (CICS). Specializing in innovative web solutions and application development.">
     <meta name="author" content="John Paul Bantillo">
-    <meta name="keywords" content="John Paul Bantillo, Web Development, Application Development, Technology Innovator, Full Stack Development, Software Engineering, Northern Iloilo State University">
+    <meta name="keywords" content="Northern Iloilo State University, NISU, College of Information and Computing Studies, CICS, John Paul Bantillo, Web Development, BSIT, Information Technology, Software Engineering, Iloilo University">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Enhanced Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://johnpaulbantillo.site/">
-    <meta property="og:title" content="John Paul Bantillo - Web and Application Developer">
-    <meta property="og:description" content="Portfolio of John Paul Bantillo, a Web and Application Developer specializing in cutting-edge technology solutions.">
+    <meta property="og:title" content="John Paul Bantillo - NISU CICS Student & Web Developer">
+    <meta property="og:description" content="Portfolio of John Paul Bantillo, a BSIT student at Northern Iloilo State University (NISU) College of Information and Computing Studies (CICS), specializing in web and application development.">
     <meta property="og:image" content="https://johnpaulbantillo.site/img/profile.jpg">
+    <meta property="og:site_name" content="John Paul Bantillo - NISU CICS Portfolio">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://johnpaulbantillo.site/">
-    <meta property="twitter:title" content="John Paul Bantillo - Web and Application Developer">
-    <meta property="twitter:description" content="Portfolio of John Paul Bantillo, a Web and Application Developer specializing in cutting-edge technology solutions.">
-    <meta property="twitter:image" content="https://johnpaulbantillo.site/img/profile.jpg">
+    <!-- Enhanced Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://johnpaulbantillo.site/">
+    <meta name="twitter:title" content="John Paul Bantillo - NISU CICS Student & Web Developer">
+    <meta name="twitter:description" content="Portfolio of John Paul Bantillo, a BSIT student at Northern Iloilo State University (NISU) College of Information and Computing Studies (CICS), specializing in web and application development.">
+    <meta name="twitter:image" content="https://johnpaulbantillo.site/img/profile.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="image/favicon.ico">
@@ -33,20 +35,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
     <link rel="manifest" href="image/site.webmanifest">
 
-    <!-- Stylesheets -->
+    <!-- Performance Optimized Stylesheets -->
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
 
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="img/profile.jpg" as="image">
 
-    <!-- Schema.org Structured Data -->
+    <!-- Enhanced Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "name": "John Paul Bantillo - Web and Application Developer",
+        "name": "John Paul Bantillo - NISU CICS Student & Web Developer",
         "url": "https://johnpaulbantillo.site",
         "mainEntity": {
             "@type": "Person",
@@ -54,19 +58,31 @@
             "url": "https://johnpaulbantillo.site",
             "image": "https://johnpaulbantillo.site/img/profile.jpg",
             "jobTitle": "Web and Application Developer",
+            "description": "BSIT student at Northern Iloilo State University (NISU) College of Information and Computing Studies (CICS)",
             "worksFor": {
                 "@type": "EducationalOrganization",
                 "name": "Northern Iloilo State University",
-                "url": "https://www.nisu.edu.ph/"
+                "url": "https://www.nisu.edu.ph/",
+                "department": {
+                    "@type": "Organization",
+                    "name": "College of Information and Computing Studies"
+                }
             },
             "alumniOf": {
                 "@type": "EducationalOrganization",
                 "name": "Northern Iloilo State University",
+                "department": "College of Information and Computing Studies",
                 "url": "https://www.nisu.edu.ph/"
             },
             "sameAs": [
                 "https://github.com/variable27",
                 "https://www.linkedin.com/in/john-paul-bantillo-59542727b/"
+            ],
+            "knowsAbout": [
+                "Web Development",
+                "Application Development",
+                "Software Engineering",
+                "Information Technology"
             ]
         }
     }
@@ -74,98 +90,112 @@
 </head>
 <body>
     <header itemscope itemtype="https://schema.org/WPHeader">
-        <nav class="container">
-            <div class="logo">JPB</div>
+        <nav class="container" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="logo" itemprop="name">JPB</div>
             <div class="nav-links">
-                <a href="resume.html" title="Resume of John Paul Bantillo">Resume</a>
-                <a href="#about" title="About John Paul Bantillo">About</a>
-                <a href="#education" title="Education at NISU under CICS">Education</a>
-                <a href="#skills" title="Technical Skills">Skills</a>
-                <a href="#contact" title="Contact Information">Contact</a>
+                <a href="resume.html" title="Resume of John Paul Bantillo" itemprop="url">Resume</a>
+                <a href="#about" title="About John Paul Bantillo - NISU CICS Student" itemprop="url">About</a>
+                <a href="#education" title="Education at Northern Iloilo State University CICS" itemprop="url">Education</a>
+                <a href="#skills" title="Technical Skills and Expertise" itemprop="url">Skills</a>
+                <a href="#contact" title="Contact Information" itemprop="url">Contact</a>
             </div>
         </nav>
     </header>
 
-<main role="main" itemscope itemtype="https://schema.org/ProfilePage">
-    <section class="section hero" itemscope itemtype="https://schema.org/Person" itemprop="mainEntity">
-        <div class="hero-content">
-            <div class="hero-image glow">
-                <img src="img/profile.jpg" 
-                     alt="John Paul Bantillo - Web and Application Developer"
-                     itemprop="image" 
-                     width="200" 
-                     height="200"
-                     loading="eager">
+    <main role="main" itemscope itemtype="https://schema.org/ProfilePage">
+        <section class="section hero" itemscope itemtype="https://schema.org/Person" itemprop="mainEntity">
+            <div class="hero-content">
+                <div class="hero-image glow">
+                    <img src="img/profile.jpg" 
+                         alt="John Paul Bantillo - NISU CICS Student and Web Developer"
+                         itemprop="image" 
+                         width="200" 
+                         height="200"
+                         loading="eager"
+                         fetchpriority="high">
+                </div>
+                <h1 itemprop="name">John Paul Bantillo</h1>
+                <p itemprop="jobTitle">Web and Application Developer</p>
+                <p itemprop="affiliation">Northern Iloilo State University (NISU) | College of Information and Computing Studies (CICS)</p>
             </div>
-            <h1 itemprop="name">John Paul Bantillo</h1>
-            <p itemprop="jobTitle">Web and Application Developer</p>
-            <p>NISU | CICS | Technology Innovator</p>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="section" itemscope itemtype="https://schema.org/AboutPage">
-        <div class="container">
-            <h2 itemprop="name">About John Paul Bantillo</h2>
-            <div class="grid">
-                <div class="card glow" itemprop="description">
-                    <h3>Web and Application Developer</h3>
-                    <p>I am a passionate developer focused on crafting seamless user experiences and innovative web and application solutions. As a student at <a href="https://www.nisu.edu.ph/">Northern Iloilo State University (NISU)</a>, I specialize in creating cutting-edge technologies that solve real-world challenges.</p>
+        <section id="about" class="section" itemscope itemtype="https://schema.org/AboutPage">
+            <div class="container">
+                <h2 itemprop="name">About John Paul Bantillo</h2>
+                <div class="grid">
+                    <div class="card glow" itemprop="description">
+                        <h3>NISU CICS Student & Web Developer</h3>
+                        <p>As a dedicated student at the <strong>College of Information and Computing Studies (CICS)</strong> of <strong>Northern Iloilo State University (NISU)</strong>, I combine academic excellence with practical development skills. My focus lies in creating innovative web and application solutions that bridge theoretical knowledge with real-world applications.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education" class="section bg-gradient" itemscope itemtype="https://schema.org/EducationEvent">
-        <div class="container">
-            <h2 itemprop="name">Education</h2>
-            <div class="card glow">
-                <h3><a href="https://www.nisu.edu.ph/" itemprop="provider">Northern Iloilo State University</a></h3>
-                <p itemprop="educationalProgram">College of Information and Computing Studies (CICS)</p>
-                <p>Bachelor of Science in Information Technology (BSIT)</p>
-                <p>Specializing in Web and Application Development</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section" itemscope itemtype="https://schema.org/DefinedTermSet">
-        <div class="container">
-            <h2 itemprop="name">Technical Expertise</h2>
-            <div class="grid">
-                <div class="card glow" itemscope itemtype="https://schema.org/DefinedTerm">
-                    <h3 itemprop="name">Programming & Development</h3>
-                    <p itemprop="description">Full Stack Development | Software Engineering</p>
-                </div>
-                <div class="card glow" itemscope itemtype="https://schema.org/DefinedTerm">
-                    <h3 itemprop="name">Technologies & Tools</h3>
-                    <p itemprop="description">Web Technologies | Database Management</p>
+        <section id="education" class="section bg-gradient" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <div class="container">
+                <h2 itemprop="name">Education</h2>
+                <div class="card glow">
+                    <h3><a href="https://www.nisu.edu.ph/" itemprop="url"><strong>Northern Iloilo State University (NISU)</strong></a></h3>
+                    <p itemprop="department"><strong>College of Information and Computing Studies (CICS)</strong></p>
+                    <p itemprop="educationalProgram">Bachelor of Science in Information Technology (BSIT)</p>
+                    <p itemprop="description">Focusing on Web Development and Software Engineering</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section" itemscope itemtype="https://schema.org/ContactPoint">
-        <div class="container">
-            <h2 itemprop="contactType">Contact Me</h2>
-            <div class="contact-links">
-                <a href="https://github.com/variable27" title="GitHub Profile" itemprop="url">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/john-paul-bantillo-59542727b/" title="LinkedIn Profile" itemprop="url">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:jpbantillo27@gmail.com" title="Email" itemprop="email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        <section id="skills" class="section" itemscope itemtype="https://schema.org/ItemList">
+            <div class="container">
+                <h2 itemprop="name">Technical Expertise</h2>
+                <div class="grid">
+                    <div class="card glow" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <h3 itemprop="name">Development Skills</h3>
+                        <ul itemprop="description">
+                            <li>Full Stack Web Development</li>
+                            <li>Application Architecture</li>
+                            <li>Software Engineering</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="card glow" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <h3 itemprop="name">Technologies</h3>
+                        <ul itemprop="description">
+                            <li>Modern Web Technologies</li>
+                            <li>Cloud Computing</li>
+                            <li>Version Control</li>
+                            <li>API Development</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
 
+        <section id="contact" class="section" itemscope itemtype="https://schema.org/ContactPoint">
+            <div class="container">
+                <h2 itemprop="contactType">Connect With Me</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/variable27" title="GitHub Profile of John Paul Bantillo" itemprop="url" rel="noopener">
+                        <i class="fab fa-github" aria-label="GitHub"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-paul-bantillo-59542727b/" title="LinkedIn Profile of John Paul Bantillo" itemprop="url" rel="noopener">
+                        <i class="fab fa-linkedin" aria-label="LinkedIn"></i>
+                    </a>
+                    <a href="mailto:jpbantillo27@gmail.com" title="Email John Paul Bantillo" itemprop="email">
+                        <i class="fas fa-envelope" aria-label="Email"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
-            <p>© 2024 John Paul Bantillo. All rights reserved.</p>
+            <p>© <span itemprop="copyrightYear">2024</span> <span itemprop="copyrightHolder">John Paul Bantillo</span>. All rights reserved.</p>
+            <p>Student at Northern Iloilo State University (NISU) - College of Information and Computing Studies (CICS)</p>
         </div>
     </footer>
+
+    <!-- Deferred Loading of Non-Critical Scripts -->
+    <script defer src="assets/main.js"></script>
 </body>
 </html>
