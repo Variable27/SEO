@@ -274,6 +274,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 10px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
