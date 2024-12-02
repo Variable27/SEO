@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.johnpaulbantillo.site/NISU.html/assets/sitemap.xml
