@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Iloilo State University (NISU) - An Icon of Hope for Development</title>
+    <meta name="description" content="Northern Iloilo State University - A premier educational institution committed to academic excellence, research, and community development in Iloilo, Philippines.">
+    <meta name="keywords" content="NISU, Northern Iloilo State University, higher education, Iloilo, Philippines, academic excellence">
+    <style>
+        /* Imported CSS from paste.txt */
+        /* Import Google Fonts - Added display swap for better performance */
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+        /* Custom Properties - Enhanced color scheme and added new variables */
+        :root {
+            /* Colors */
+            --primary-color: #00f7ff;
+            --primary-color-dark: #00c4cc;
+            --secondary-color: #6610f2;
+            --secondary-color-dark: #520dc2;
+            --bg-dark: #0a0a1f;
+            --bg-lighter: #151530;
+            --text-color: #e0e0ff;
+            --text-color-muted: #b0b0cc;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            
+            /* Animation */
+            --transition-speed: 0.3s;
+            --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Layout */
+            --border-radius: 15px;
+            --container-max-width: 1200px;
+            --header-height: 4rem;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 247, 255, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 247, 255, 0.15);
+            --shadow-lg: 0 10px 15px rgba(0, 247, 255, 0.2);
+        }
+
+        /* Reset & Base Styles - Added focus styles and smooth scrolling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Improved focus styles for accessibility */
+        :focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color var(--transition-speed) var(--transition-timing);
+        }
+
+        a:hover {
+            color: var(--primary-color-dark);
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+            position: relative;
+            width: 100%;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(21, 21, 48, 0.8);
+            padding: var(--spacing-sm) 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(224, 224, 255, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: var(--spacing-md);
+        }
+
+        nav a {
+            color: var(--text-color);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width var(--transition-speed) var(--transition-timing), left var(--transition-speed) var(--transition-timing);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        section {
+            padding: var(--spacing-lg) 0;
+            position: relative;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* News and Featured Content */
+        .featured-news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .featured-news article {
+            background: var(--bg-lighter);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            transition: transform var(--transition-speed) var(--transition-timing);
+        }
+
+        .featured-news article:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .featured-news .read-more {
+            display: inline-block;
+            margin-top: var(--spacing-sm);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-lighter);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .contact-info, .quick-links, .social-media {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .social-icons a {
+            margin: 0 var(--spacing-xs);
+            color: var(--text-color);
+            transition: color var(--transition-speed) var(--transition-timing);
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            color: var(--text-color-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .featured-news {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#administration">Administration</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#research">Research & Extension</a></li>
+                    <li><a href="#campuses">External Campuses</a></li>
+                    <li><a href="#international">International Collaborations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h2>Welcome to Northern Iloilo State University</h2>
+            <div class="featured-news">
+                <article>
+                    <h3>NCAA, NISU CoEd Collaborate in Launching Book Lemlunay</h3>
+                    <p>In collaboration with the National Commission for Culture and the Arts (NCAA) and Northern Iloilo State University's College of Education, a significant book launch takes place...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=74:ncaa-nisu-coed-collaborate-in-launching-book-lemlunay&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU Takes Part in Estancia's 106th Founding Anniversary</h3>
+                    <p>Northern Iloilo State University (NISU)—Main Campus demonstrated support for the 106th Founding Anniversary of Estancia...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=73:nisu-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates-2&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU Collaborates with FilPas and SeeMeSol</h3>
+                    <p>Expanding digital transformation and career opportunities for graduates through strategic partnerships...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=72:nisu-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About NISU</h2>
+            <div class="about-content">
+                <p>Northern Iloilo State University (NISU) stands as a beacon of educational excellence in the Iloilo region. Committed to holistic development, we strive to provide world-class education that empowers students to become global citizens and catalysts of change.</p>
+                <p><strong>Our Vision:</strong> A globally competitive State University in Asia.</p>
+                <p><strong>Our Mission:</strong>Human resources development through quality and relevant education, environment-friendly modern technologies and preservation of Filipino values and culture for sustainable and improved quality of life..</p>
+            </div>
+        </section>
+
+        <section id="administration" class="container">
+            <h2>Administration</h2>
+            <div class="leadership-team">
+                <h3>University Leadership</h3>
+                <p>Led by President Gerardo, NISU is committed to academic excellence and community development.</p>
+            </div>
+        </section>
+
+        <section id="academics" class="container">
+            <h2>Academics</h2>
+            <div class="academic-offerings">
+                <h3>Colleges and Departments</h3>
+                <ul>
+                    <li>College of Education</li>
+                    <li>College of Arts and Sciences</li>
+                    <li>College of Business and Entrepreneurship</li>
+                    <li>College of Engineering</li>
+                    <li>College of Nursing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="research" class="container">
+            <h2>Research and Extension</h2>
+            <div class="research-highlights">
+                <h3>Research Focus Areas</h3>
+                <ul>
+                    <li>Sustainable Development</li>
+                    <li>Digital Transformation</li>
+                    <li>Community Empowerment</li>
+                    <li>Environmental Stewardship</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="campuses" class="container">
+            <h2>External Campuses</h2>
+            <div class="campus-locations">
+                <ul>
+                    <li>Estancia Main Campus</li>
+                    <li>Ajuy Campus</li>
+                    <li>Batad Campus</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="international" class="container">
+            <h2>International Collaborations</h2>
+            <div class="collaboration-highlights">
+                <ul>
+                    <li>Memorandum of Understanding with UKI</li>
+                    <li>Global Academic Partnerships</li>
+                    <li>Student Exchange Programs</li>
+                    <li>International Research Initiatives</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <h3>Contact NISU</h3>
+                <p>Phone: 3970-314</p>
+                <p>Email: nisuadmin@nisu.edu.ph</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <a href="http://nisu-ehris.net:7676/login">Online Services</a>
+                <a href="https://drive.google.com/file/d/1xn8iystAstQijv7mQDtmfpB64LVC_QOE/view">Job Vacancies</a>
+                <a href="https://www.nisu.edu.ph/index.php/administration/good-governance/agency-procurement-compliance-and-performance-indicators">Procurement</a>
+            </div>
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Northern Iloilo State University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
