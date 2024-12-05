@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College of Information and Computing Studies (CICS)</title>
-    <meta name="description" content="College of Information and Computing Studies - A premier educational institution committed to academic excellence, research, and community development in Iloilo, Philippines.">
-    <meta name="keywords" content="CICS, College of Information and Computing Studies, College, Iloilo, Philippines, academic excellence">
+    <title>College of Information and Computing Sciences (CICS) - University of Santo Tomas</title>
+    <meta name="description" content="Discover the College of Information and Computing Sciences (CICS) at the University of Santo Tomas, offering cutting-edge programs in Computer Science, Information Systems, and Information Technology.">
+    <meta name="keywords" content="CICS, College of Information and Computing Sciences, UST, University of Santo Tomas, Computer Science, Information Systems, Information Technology, Technology Education, CICS Programs, UST CICS Manila">
+    <meta name="author" content="University of Santo Tomas">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Imported CSS from paste.txt */
-        /* Import Google Fonts - Added display swap for better performance */
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
-        /* Custom Properties - Enhanced color scheme and added new variables */
+        /* Custom Properties */
         :root {
-            /* Colors */
             --primary-color: #00f7ff;
             --primary-color-dark: #00c4cc;
             --secondary-color: #6610f2;
@@ -22,29 +19,14 @@
             --bg-lighter: #151530;
             --text-color: #e0e0ff;
             --text-color-muted: #b0b0cc;
-            
-            /* Spacing */
             --spacing-xs: 0.5rem;
             --spacing-sm: 1rem;
             --spacing-md: 2rem;
             --spacing-lg: 4rem;
-            
-            /* Animation */
             --transition-speed: 0.3s;
-            --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-            
-            /* Layout */
             --border-radius: 15px;
-            --container-max-width: 1200px;
-            --header-height: 4rem;
-            
-            /* Shadows */
-            --shadow-sm: 0 2px 4px rgba(0, 247, 255, 0.1);
-            --shadow-md: 0 4px 6px rgba(0, 247, 255, 0.15);
-            --shadow-lg: 0 10px 15px rgba(0, 247, 255, 0.2);
         }
 
-        /* Reset & Base Styles - Added focus styles and smooth scrolling */
         * {
             margin: 0;
             padding: 0;
@@ -53,45 +35,21 @@
 
         html {
             scroll-behavior: smooth;
-            font-size: 16px;
         }
 
         body {
             background: var(--bg-dark);
             color: var(--text-color);
-            line-height: 1.6;
             font-family: 'Space Grotesk', sans-serif;
-            overflow-x: hidden;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
         }
 
-        /* Improved focus styles for accessibility */
-        :focus-visible {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
-
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color var(--transition-speed) var(--transition-timing);
-        }
-
-        a:hover {
-            color: var(--primary-color-dark);
-        }
-
-        /* Container */
         .container {
-            max-width: var(--container-max-width);
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-sm);
-            position: relative;
-            width: 100%;
         }
 
-        /* Header & Navigation */
         header {
             background: rgba(21, 21, 48, 0.8);
             padding: var(--spacing-sm) 0;
@@ -100,24 +58,39 @@
             top: 0;
             z-index: 1000;
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(224, 224, 255, 0.1);
         }
 
-        nav ul {
+        nav {
             display: flex;
-            justify-content: center;
-            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
             gap: var(--spacing-md);
         }
 
-        nav a {
+        .nav-links a {
             color: var(--text-color);
-            padding: var(--spacing-xs) var(--spacing-sm);
+            text-decoration: none;
             position: relative;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            transition: color var(--transition-speed);
         }
 
-        nav a::after {
+        .nav-links a::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -125,26 +98,74 @@
             width: 0;
             height: 2px;
             background: var(--primary-color);
-            transition: width var(--transition-speed) var(--transition-timing), left var(--transition-speed) var(--transition-timing);
+            transition: width var(--transition-speed), left var(--transition-speed);
         }
 
-        nav a:hover::after {
+        .nav-links a:hover::after {
             width: 100%;
             left: 0;
         }
 
-        /* Main Content */
         main {
-            padding-top: calc(var(--header-height) + 2rem);
+            padding-top: 4rem;
         }
 
-        section {
-            padding: var(--spacing-lg) 0;
-            position: relative;
-        }
-
-        section h2 {
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: var(--spacing-sm);
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .degree-programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .program {
+            background: var(--bg-lighter);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            border: 1px solid rgba(224, 224, 255, 0.1);
+        }
+
+        .program:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 247, 255, 0.2);
+        }
+
+        .program h3 {
+            margin-bottom: var(--spacing-sm);
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-info {
+            background: var(--bg-lighter);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+            border-radius: var(--border-radius);
+        }
+
+        .contact-info h2 {
             margin-bottom: var(--spacing-md);
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
@@ -152,67 +173,11 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* News and Featured Content */
-        .featured-news {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-md);
-        }
-
-        .featured-news article {
-            background: var(--bg-lighter);
-            padding: var(--spacing-md);
-            border-radius: var(--border-radius);
-            transition: transform var(--transition-speed) var(--transition-timing);
-        }
-
-        .featured-news article:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .featured-news .read-more {
-            display: inline-block;
-            margin-top: var(--spacing-sm);
-            color: var(--primary-color);
-        }
-
-        /* Footer */
         footer {
             background: var(--bg-lighter);
-            padding: var(--spacing-md) 0;
-            text-align: center;
-        }
-
-        .contact-info, .quick-links, .social-media {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .social-icons a {
-            margin: 0 var(--spacing-xs);
-            color: var(--text-color);
-            transition: color var(--transition-speed) var(--transition-timing);
-        }
-
-        .social-icons a:hover {
-            color: var(--primary-color);
-        }
-
-        .copyright {
             color: var(--text-color-muted);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .featured-news {
-                grid-template-columns: 1fr;
-            }
+            text-align: center;
+            padding: var(--spacing-md) 0;
         }
     </style>
 </head>
@@ -220,183 +185,61 @@
     <header>
         <div class="container">
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#administration">Administration</a></li>
-                    <li><a href="#academics">Academics</a></li>
-                    <li><a href="#research">Research & Extension</a></li>
-                    <li><a href="#campuses">External Campuses</a></li>
-                    <li><a href="#international">International Collaborations</a></li>
-                </ul>
+                <div class="nav-links">
+                     <div class="logo">CICS</div>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Research</a>
+                    <a href="#">Contact</a>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="home" class="container">
-            <h2>Welcome to College of Information and Computing Studies</h2>
-            <div class="featured-news">
-                <article>
-                    <h3>NCAA, CICS CoEd Collaborate in Launching Book Lemlunay</h3>
-                    <p>In collaboration with the National Commission for Culture and the Arts (NCAA) and College of Information and Computing Studies's College of Education, a significant book launch takes place...</p>
-                    <a href="https://www.CICS.edu.ph/index.php?view=article&id=74:ncaa-CICS-coed-collaborate-in-launching-book-lemlunay&catid=9:news-and-events" class="read-more">Read More</a>
-                </article>
-                <article>
-                    <h3>CICS Takes Part in Estancia's 106th Founding Anniversary</h3>
-                    <p>College of Information and Computing Studies (CICS)—Main Campus demonstrated support for the 106th Founding Anniversary of Estancia...</p>
-                    <a href="https://www.CICS.edu.ph/index.php?view=article&id=73:CICS-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates-2&catid=9:news-and-events" class="read-more">Read More</a>
-                </article>
-                <article>
-                    <h3>CICS Collaborates with FilPas and SeeMeSol</h3>
-                    <p>Expanding digital transformation and career opportunities for graduates through strategic partnerships...</p>
-                    <a href="https://www.CICS.edu.ph/index.php?view=article&id=72:CICS-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates&catid=9:news-and-events" class="read-more">Read More</a>
-                </article>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>College of Information and Computing Sciences</h1>
+                <p>Empowering Innovation through Technology Education and Research</p>
             </div>
         </section>
 
-        <section id="about" class="container">
+        <section class="container">
             <h2>About CICS</h2>
-            <div class="about-content">
-                <p>College of Information and Computing Studies (CICS) stands as a beacon of educational excellence in the Iloilo region. Committed to holistic development, we strive to provide world-class education that empowers students to become global citizens and catalysts of change.</p>
-                <p><strong>Our Vision:</strong> A globally competitive State University in Asia.</p>
-                <p><strong>Our Mission:</strong>Human resources development through quality and relevant education, environment-friendly modern technologies and preservation of Filipino values and culture for sustainable and improved quality of life..</p>
+            <p>The College of Information and Computing Sciences (CICS) at the University of Santo Tomas is a leader in technological education and innovation in the Philippines. CICS is renowned for its state-of-the-art programs in Computer Science, Information Systems, and Information Technology, equipping students with the skills to excel in the modern digital landscape.</p>
+        </section>
+
+        <section class="container">
+            <div class="degree-programs">
+                <div class="program">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>A 4-year program emphasizing advanced computational theories and cutting-edge applications in artificial intelligence, software engineering, and data science.</p>
+                </div>
+                <div class="program">
+                    <h3>Bachelor of Science in Information Systems</h3>
+                    <p>Focuses on the design, development, and management of information systems to enhance business processes and decision-making.</p>
+                </div>
+                <div class="program">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>Develops practical expertise in network management, cloud computing, and software solutions for diverse industries.</p>
+                </div>
             </div>
         </section>
 
-        <section id="administration" class="container">
-            <h2>Administration</h2>
-            <div class="leadership-team">
-                <h3>University Leadership</h3>
-                <p>Led by President Gerardo, CICS is committed to academic excellence and community development.</p>
-            </div>
-        </section>
-
-        <section id="academics" class="container">
-            <h2>Academics</h2>
-            <div class="academic-offerings">
-                <h3>Colleges and Departments</h3>
-                <ul>
-                    <School of Education  
-     Doctor of Education    COPC No. 020, s. 2022
-     Master of Arts in Teaching (MAT) Major in: English/ Science/ Mathematics   COPC No. 018, s. 2022
-     Master of Arts in Education (MAEd)   Major in Educational Management   COPC No. 019, s. 2022
-     Bachelor of Elementary Educ(BEEd)  COPC No. 17, s.2015
-     Bachelor of Secondary Educ(BSEd) Majors in Filipino / English/ Math/Social Studies COPC No. 16, s.2015
-     
-Institute of Information and Computer Studies    
-    BS Computer Science COPC No. 67, s.2015
-    BS Information Technology   COPC No. 68, s.2015
-     
-School of Engineering    
-    BS in Civil Engineering     COPC No. 066, s.2020
-    BS in Mechanical Engineering    COPC No. 067, s.2020
-     
-School of Management     
-     Master in Public Administration     
-     Bachelor of Public Administration  COPC No. 13, s.2020
-     BS Business Administration     COPC No. 59, s.2015
-          Major in Marketing Mgt.    
-     BS Entrepreneurship    COPC No. 60, s.2020
-     BS Tourism (Major in Resort Mgt.   COPC No. 62, s.2015
-     
-School of Fisheries  
-     BS Fisheries   COPC No. 36, s.2020
-     
-School of Arts and Science   
-     BA English COPC No. 16, s.2020
-     BA Economics   COPC No. 22, s.2020
-     BS Biology COPC No. 37, s.2020
-    Diploma in Midwifery    COPC No. 23, s.2021
-     
-School of Industrial Technology  
-     BS Industrial Technology                                     Majors in Automotive Tech/ Drafting Tech/Electrical Tech  COPC No. 002, s.2017
-                </ul>
-            </div>
-        </section>
-
-        <section id="research" class="container">
-            <h2>Research and Extension</h2>
-            <div class="research-highlights">
-                <h3>Research Focus Areas</h3>
-                <ul>
-                    <li>Sustainable Development</li>
-                    <li>Digital Transformation</li>
-                    <li>Community Empowerment</li>
-                    <li>Environmental Stewardship</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="campuses" class="container">
-            <h2>External Campuses</h2>
-            <div class="campus-locations">
-                <ul>
-                    <li>Estancia Main Campus</li>
-                    <li>Ajuy Campus</li>
-                    <li>Batad Campus</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="international" class="container">
-            <h2>International Collaborations</h2>
-            <div class="collaboration-highlights">
-                <ul>
-                    <li>Memorandum of Understanding with UKI</li>
-                    <li>Global Academic Partnerships</li>
-                    <li>Student Exchange Programs</li>
-                    <li>International Research Initiatives</li>
-                </ul>
-            </div>
+        <section class="contact-info container">
+            <h2>Contact Information</h2>
+            <p>Administration Office</p>
+            <p>3/F Roque Ruaño Building, University of Santo Tomas, España Boulevard, Sampaloc, Manila 1008, Philippines</p>
+            <p>Phone: +63-2-3406-1611 local 8518</p>
+            <p>Email: cics@ust.edu.ph</p>
+            <p>Hours: Monday to Saturday, 7:00 a.m. – 12:00 n.n., 1:00 p.m. – 8:00 p.m.</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="contact-info">
-                <h3>Contact CICS</h3>
-                <p>Phone: 3970-314</p>
-                <p>Email: CICSadmin@CICS.edu.ph</p>
-            </div>
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <a href="http://CICS-ehris.net:7676/login">Online Services</a>
-                <a href="https://drive.google.com/file/d/1xn8iystAstQijv7mQDtmfpB64LVC_QOE/view">Job Vacancies</a>
-                <a href="https://www.CICS.edu.ph/index.php/administration/good-governance/agency-procurement-compliance-and-performance-indicators">Procurement</a>
-            </div>
-            <div class="backlinks">
-    <p>Explore related resources:</p>
-    <ul>
-        <li>
-            <a href="https://www.CICS.edu.ph/" target="_blank" rel="noopener noreferrer" title="Visit CICS's official website">
-                College of Information and Computing Studies (CICS)
-            </a>
-        </li>
-        <li>
-            <a href="https://cics.CICS.edu.ph/" target="_blank" rel="noopener noreferrer" title="Explore CICS at CICS">
-                College of Information and Computing Sciences (CICS)
-            </a>
-        </li>
-        <li>
-            <a href="https://www.johnpaulbantillo.site/" target="_blank" rel="noopener noreferrer" title="Visit John Paul Bantillo's Portfolio">
-                John Paul Bantillo's Portfolio
-            </a>
-        </li>
-    </ul>
-</div>
-
-            <div class="social-media">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 College of Information and Computing Studies. All Rights Reserved.</p>
-            </div>
+            <p>&copy; 2024 University of Santo Tomas College of Information and Computing Sciences. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
