@@ -19,9 +19,6 @@
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     
-    /* Animation */
-    --transition-speed: 0.2s;
-    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
     
     /* Layout */
     --border-radius: 15px;
