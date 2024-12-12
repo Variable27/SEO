@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICS</title>
+    <meta name="description" content="Discover CICS: The ultimate guide to IBM's transaction processing system for z/OS. Learn about its features, programming languages, and enterprise computing capabilities.">
+    <meta name="keywords" content="CICS, Customer Information Control System, z/OS, mainframe, transaction processing, IBM, enterprise computing, mainframe programming, COBOL, Java, application development">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/cics-guide">
+    <meta name="author" content="IBM">
+    <meta property="og:title" content="CICS: Comprehensive Transaction Processing Guide">
+    <meta property="og:description" content="Explore the power of CICS in enterprise computing, transaction management, and z/OS applications.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://example.com/cics-guide">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        .sidebar {
+            max-height: calc(100vh - 4rem);
+            overflow-y: auto;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "CICS: Comprehensive Guide to Transaction Processing",
+        "description": "Explore the fundamentals of CICS, IBM's powerful transaction processing system for z/OS enterprise computing.",
+        "author": {
+            "@type": "Organization",
+            "name": "IBM"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IBM",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://example.com/ibm-logo.png"
+            }
+        },
+        "datePublished": "2024-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://example.com/cics-guide"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+        <header class="py-6 border-b border-gray-200">
+            <iframe src="CICS.html" height="1000" width="100%" title="Iframe Example"></iframe>
+            <h1 class="text-3xl font-bold text-blue-800">CICS: Enterprise Transaction Processing System</h1>
+            <nav aria-label="Breadcrumb" class="text-sm text-gray-600 mt-2">
+                <ol class="list-none p-0 inline-flex">
+                    <li class="flex items-center">
+                        <a href="#" class="text-blue-600 hover:underline">Home</a>
+                        <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-blue-600 hover:underline">Mainframe</a>
+                        <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                    </li>
+                    <li>
+                        <span class="text-gray-500">CICS Guide</span>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+
+        <div class="flex flex-col md:flex-row mt-6">
+            <aside class="w-full md:w-1/4 bg-white p-4 rounded shadow sidebar mr-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Table of Contents</h2>
+                <nav aria-label="Site Navigation">
+                    <ul>
+                        <li class="mb-2"><a href="#introduction" class="text-blue-600 hover:underline">What is CICS?</a></li>
+                        <li class="mb-2"><a href="#zos-system" class="text-blue-600 hover:underline">CICS in z/OS</a></li>
+                        <li class="mb-2"><a href="#programs-transactions" class="text-blue-600 hover:underline">Transactions & Programs</a></li>
+                        <li class="mb-2"><a href="#programming-languages" class="text-blue-600 hover:underline">Supported Languages</a></li>
+                        <li class="mb-2"><a href="#programming-types" class="text-blue-600 hover:underline">Programming Types</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="w-full md:w-3/4 bg-white p-6 rounded shadow">
+                <section id="introduction" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Understanding CICS: A Comprehensive Overview</h2>
+                    <p class="mb-4">CICS (Customer Information Control System) is a powerful transaction processing subsystem designed for the z/OS operating system. It enables organizations to run online applications with exceptional performance, reliability, and scalability.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Key Features of CICS</h3>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li><strong>Resource Management:</strong> Efficiently shares and manages system resources</li>
+                        <li><strong>Data Integrity:</strong> Ensures consistent and secure data processing</li>
+                        <li><strong>High Performance:</strong> Supports rapid transaction processing for enterprise applications</li>
+                        <li><strong>Multi-User Support:</strong> Enables simultaneous access by multiple users</li>
+                    </ul>
+                </section>
+
+                <section id="zos-system" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">CICS in the z/OS Ecosystem</h2>
+                    <p>Within the z/OS system, CICS acts as a specialized layer for transaction management. It isolates and handles online application programs, providing a robust interface between application logic and system hardware.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">System Integration</h3>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Separates online applications from other system programs</li>
+                        <li>Provides direct interfaces with database managers like DB2</li>
+                        <li>Manages resource allocation and user authorization</li>
+                    </ul>
+                </section>
+
+                <section id="programs-transactions" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">CICS Transactions and Programs</h2>
+                    <p>A CICS application represents a collection of interconnected programs designed to execute specific business operations. These can range from processing travel requests to managing complex payroll systems.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Transaction Processing Workflow</h3>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Execute one or more application programs</li>
+                        <li>Handle message transmissions between applications and terminals</li>
+                        <li>Manage file and database access requests</li>
+                    </ul>
+                </section>
+
+                <section id="programming-languages" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Programming Language Support</h2>
+                    <p>CICS offers remarkable flexibility by supporting multiple programming languages, allowing developers to leverage their existing skills and preferred development environments.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Supported Languages</h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <ul class="list-disc pl-6">
+                            <li>COBOL</li>
+                            <li>Object-Oriented COBOL</li>
+                            <li>C</li>
+                        </ul>
+                        <ul class="list-disc pl-6">
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>PL/I</li>
+                            <li>Assembler</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="programming-types" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Transaction Programming Paradigms</h2>
+                    <p>CICS supports different transaction programming approaches to meet diverse application requirements.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Transaction Types</h3>
+                    <ul class="list-disc pl-6">
+                        <li>
+                            <strong>Conversational Transactions:</strong> 
+                            <span>Interactive programs that maintain an ongoing dialogue with users</span>
+                        </li>
+                        <li>
+                            <strong>Non-Conversational Transactions:</strong> 
+                            <span>Single-input, immediate-response transactions that complete quickly</span>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+
+        <footer class="mt-6 py-4 text-center text-gray-600 border-t">
+            <p>© IBM Corporation 1990-2024 | z/OS Basic Skills Information Center</p>
+            <nav class="mt-2">
+                <a href="#" class="text-blue-600 hover:underline mx-2">Privacy Policy</a>
+                <a href="#" class="text-blue-600 hover:underline mx-2">Terms of Service</a>
+                <a href="#" class="text-blue-600 hover:underline mx-2">Contact</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
